@@ -38,3 +38,12 @@ else
     Console.WriteLine("4. feladat: Nincs ilyen kifejezés!");
 
 }
+
+//5.feladat
+Console.WriteLine($"5. feladat: Statisztika");
+Console.WriteLine($"\tmod -> {kifejezesek.Where(x => x.Contains("mod")).Count()} db");
+Console.WriteLine($"\t/ -> {kifejezesek.Where(x => x.Contains("/")).Count()} db");
+Console.WriteLine($"\tdiv -> {kifejezesek.Where(x => x.Contains("div")).Count()} db");
+Console.WriteLine($"\t- -> {kifejezesek.Where(x => x.Contains("-")).Count()} db");
+Console.WriteLine($"\tx -> {kifejezesek.Where(x => x.Contains("x")).Count()} db");
+Console.WriteLine($"\t+ -> {kifejezesek.Where(x => x.Contains("+")).Count()} db");
